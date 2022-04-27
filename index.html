@@ -1,15 +1,15 @@
 <form name="login" class="form">
         <p class="title">Client Dashboard</p>
         <p class="login-description">This dashboard allows you to manage your project and files</p>
-        <input type="text" name="userid" placeholder="Username" class="text-field"/>
-        <input type="password" name="pswrd" placeholder="Password" class="text-field"/>
-        <input type="submit" class="button" onclick="check(this.form)" value="Login"/>
+        <input type="text" name="emails" placeholder="Username" class="text-field"/>
+        <input type="password" name="dictionary" placeholder="Password" class="text-field"/>
+        <input type="submit" class="button" onclick="check(this.form)" value="LoginButton"/>
 </form>
 
 <script>
         function check(form) { /*function to check userid & password*/
             /*the following code checkes whether the entered userid and password are matching*/
-            if(form.userid.value == "johnsmith" && form.pswrd.value == "password123") {
+            if(form.emails.value == "johnsmith" && form.dictionary.value == "password123") {
                 window.open('dashboard.html')/*opens the target page while Id & password matches*/
             }
             else {
